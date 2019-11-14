@@ -1,14 +1,13 @@
-const express = require('express')
-const path = require('path')
-const PORT = process.env.PORT || 5000
-
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
-  .get("/calculate", handleCalculation)
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 5000;
+app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+app.get('/calculate', handleCalculation);
+app.listen(port, function() {
+  console.log('Node app is running on port', port);
+});
   
 
   function handleCalculation(req, res) {
