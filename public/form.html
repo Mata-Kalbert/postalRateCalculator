@@ -7,13 +7,13 @@
 </head>
 <body>
     <h1>Postal Rate Calculator</h1>
-    <form action=""></form>
-        <label for="">Weight</label><input type="text">
+    <form action="/calculate" method="GET"></form>
+        <label for="">Weight</label><input type="text" name="weight">
         <label for="">Type of package</label>
-        <select name="" id="">
-            <option value="">Letters stamp</option>
-            <option value="">Letters Meter</option>
-            <option value="">Large Envolopes Flats</option>
+        <select name="pakageType" id="">
+            <option value="">Letters (Stamp)</option>
+            <option value="">Letters (Metered)</option>
+            <option value="">Large Envolopes (Flats)</option>
             <option value="">First-Class Package Services-Retail</option>
         <input type="submit" name="">
         </select>
