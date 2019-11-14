@@ -13,14 +13,14 @@ express()
 
   function handleCalculation(req, res) {
     const weight = Number(req.query.weight);
-    const pakageType = req.query.pakage;
+    const pakageType = req.query.packageType;
 
-    computeCalculation(res, weight, pakageType);
+    computeCalculation(res, weight, packageType);
   }
   function computeCalculation (res, weight, packageType) {
     packageType = packageType;
     let result = 0;
-    if (packageType = "Letters (Stamped)") {
+    if (packageType = "Letters (Stamped)") { 
       result = .40 + (weight * .15);
     }
     else if (packageType = "Letters (Metered)") {
