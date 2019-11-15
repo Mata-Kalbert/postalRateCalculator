@@ -27,19 +27,19 @@ express()
     function calculateRate(res, weight, packageType) {
       packageType = packageType;
       let result = 0;
-      if (packageType = "Letters (Stamped)") {
+      if (packageType == "Letters (Stamped)") {
         result = .40 + (weight * .15);
       }
-      else if (packageType = "Letters (Metered)") {
+      else if (packageType == "Letters (Metered)") {
         result = .35 + (weight * .15);
       }
-      else if (packageType = "Large Envelopes (Flats)") {
+      else if (packageType == "Large Envelopes (Flats)") {
         result = .85 + (weight * .15);
       }
-       else if (packageType = "First-Class Package Service—Retail") {
+       else if (packageType == "First-Class Package Service—Retail") {
         if (weight <= 4) { result = 3.66; }
         else if (weight <= 8) { result = 4.39; }
-        else if (weigth <= 12) { result = 5.19; }
+        else if (weight <= 12) { result = 5.19; }
         else {result = 5.71}
       }
       else {
