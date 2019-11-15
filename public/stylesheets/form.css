@@ -3,7 +3,7 @@ body{
 }
 input [type=submit] {
     font-size: 1rem;
-    background-color: aliceblue;
+    background-color: blueviolet;
 
 }
 input [type=submit]:hover{
