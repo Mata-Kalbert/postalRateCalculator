@@ -4,7 +4,7 @@ body{
 .buttom {
     font-size: 1rem;
     background-color: lightblue;
-margin-left:10px
+margin:13px;
 
 }
 .buttom:hover {
@@ -12,6 +12,7 @@ margin-left:10px
     transition: all 1s;
     background-color: aquamarine;
     border-top-left-radius: 10px;
+    
   
 }
 form {
@@ -25,7 +26,6 @@ form {
   color:darkblue;
 }
 form:hover{
-  
   transition: all .1s;
  border:none
    
@@ -40,5 +40,6 @@ p {
     font-size: 2rem;
     text-align: center;
     border: 2px solid black;
+    background-color: lightgray;
 
 }
