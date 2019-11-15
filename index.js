@@ -24,10 +24,10 @@ express()
       const packageType = req.query.packageType;
       calculateRate(res, weight, packageType);
     }
-    function calculateRate (res, weight, packageType) {
+    function calculateRate(res, weight, packageType) {
       packageType = packageType;
       let result = 0;
-      /* if (packageType = "Letters (Stamped)") {
+      if (packageType = "Letters (Stamped)") {
         result = .40 + (weight * .15);
       }
       else if (packageType = "Letters (Metered)") {
@@ -35,8 +35,8 @@ express()
       }
       else if (packageType = "Large Envelopes (Flats)") {
         result = .85 + (weight * .15);
-      }*/
-       if (packageType = "First-Class Package Service—Retail") {
+      }
+       else if (packageType = "First-Class Package Service—Retail") {
         if (weight <= 4) { result = 3.66; }
         else if (weight <= 8) { result = 4.39; }
         else if (weigth <= 12) { result = 5.19; }
