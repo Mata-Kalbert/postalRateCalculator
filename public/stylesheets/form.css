@@ -20,12 +20,12 @@ form {
   border: 2px solid black;
   background-color:lightgrey;
   height: 90px;
-  padding: 12px;
+  padding: 20px;
   border-radius: 20px;
   color:darkblue;
 }
 form:hover{
-  transform: scale(1.5);
+  
   transition: all .1s;
  border:none
    
@@ -37,6 +37,8 @@ h1{
 }
 p {
     color:darkblue;
-    font-size: 1rem;
-    text-emphasis: center;
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid black;
+
 }
