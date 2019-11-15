@@ -9,7 +9,7 @@ margin:13px;
 }
 .buttom:hover {
     transform: scale(1.1);
-    transition: all 1s;
+    transition: all .2s;
     background-color: aquamarine;
     border-top-left-radius: 10px;
     
@@ -41,5 +41,6 @@ p {
     text-align: center;
     border: 2px solid black;
     background-color: lightgray;
+    width:70px;
 
 }
