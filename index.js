@@ -25,7 +25,7 @@ express()
       calculateRate(res, weight, packageType);
     }
     function calculateRate (res, weight, packageType) {
-     
+      packageType = packageType;
       let result = 0;
      
       if (packageType = "Letters (Stamped)") {
