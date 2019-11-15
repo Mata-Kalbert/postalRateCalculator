@@ -1,0 +1,13 @@
+body{
+    background-color: lightcoral;
+}
+input [type=submit] {
+    font-size: 1rem;
+    background-color: aliceblue;
+
+}
+input [type=submit]:hover{
+    transform: scale(2);
+    transition: all 1s;
+    background-color: aquamarine;
+}
